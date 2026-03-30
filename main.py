@@ -2,16 +2,14 @@ from fastapi import FastAPI
 import uvicorn
 import database as query
 from fastapi.middleware.cors import CORSMiddleware
-from pydantic import BaseModel, Field
-from datetime import date
-
+from Models.Orders import Orders
 
 
 app = FastAPI()
 
 origins = [
     "http://localhost:5173",
-    "http://localhost:8080",
+    "http://localhost:8000",
 ]
 
 app.add_middleware(
@@ -21,13 +19,6 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
-
-class Orders(BaseModel):
-    cliente: str = Field(max_length=255, min_length=3)
-    prodotto: str = Field(max_length=255, min_length=3)
-    quantita: int = Field(gt=0)
-    data_ordine: date
-
     
 @app.get("/api/orders")
 def get_orders():

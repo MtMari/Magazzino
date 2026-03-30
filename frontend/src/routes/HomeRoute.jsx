@@ -9,7 +9,7 @@ function HomeRoute()
             <div className="d-flex flex-column align-items-center mt-4 p-4 shadow border rounded-4">
                 <p>Questo è un progetto scolastico sviluppato con:</p>
                 <ul>
-                    <li>Frontend: React, React Router. Bootstrap</li>
+                    <li>Frontend: React, React Router, Bootstrap</li>
                     <li>Backend: FastAPI</li>
                     <li>Database: MySQL</li>
                 </ul>
