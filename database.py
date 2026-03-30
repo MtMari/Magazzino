@@ -40,6 +40,7 @@ def delete( id: int ):
     conn.close()
 
 
+
 if __name__ == "__main__":
     if get_connection():
         print("ok")

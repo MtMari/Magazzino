@@ -10,7 +10,7 @@ function OrdersRoute()
 
         try
         {
-            let response = await fetch( server + "/api/orders" );
+            let response = await fetch( server + "/orders" );
             let data = await response.json();
             
             if (!response.ok) {
@@ -66,7 +66,7 @@ function OrdersRoute()
 
         try 
         {
-            let response = await fetch( server + "/orders/delete/" + id, {
+            let response = await fetch( server + "/orders/" + id, {
                 method: "DELETE"
             });
 
