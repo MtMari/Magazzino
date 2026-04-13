@@ -12,3 +12,8 @@ Tools utilizzati:
 - React
 - React Router
 - MySQL
+
+###
+
+- aggiunta ed eliminazione degli ordini
+- query personalizzate
