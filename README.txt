@@ -15,5 +15,6 @@ Tools utilizzati:
 
 ###
 
-- aggiunta ed eliminazione degli ordini
+- API: GET, POST, DELETE
+- form per l'aggiunta e l'eliminazione degli ordini
 - query personalizzate
